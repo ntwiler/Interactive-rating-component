@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+  --very-dark-blue: #131518;
+  --dark-blue: #262e38;
+  --medium-gray: #7c8798;
+  --light-gray: #969fad;
+  --orange: #fc7614;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap; /*for mobile-first*/
+  justify-content: center;
+  align-items: center;
+  font-family: "...", sans-serif;
+  line-height: normal;
+  background-color: var(--very-dark-blue);
+}
+
+.card {
+  width: 20.4375rem;
+  height: 22.5rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+}
+
+.circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1.5rem auto 0 1.5rem;
+}
+.circle-star {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+}
+
+.numbers {
+  width: 17.4375rem;
+  display: flex;
+  justify-content: space-between;
+}

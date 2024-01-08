@@ -47,7 +47,7 @@ body {
 
 .title {
   margin: 1rem 1.5rem auto 1.5rem;
-  color: var(--Pure-White, #fff);
+  color: var(--white);
   font-family: Overpass;
   font-size: 1.5rem;
   font-style: normal;
@@ -78,7 +78,7 @@ body {
   border: 1px solid var(--dark-blue);
   padding: 0.5rem 1rem;
 
-  color: var(--Medium-Gray, #7c8798);
+  color: var(--medium-gray);
   text-align: center;
   font-family: Overpass;
   font-size: 0.875rem;
@@ -94,14 +94,21 @@ body {
   height: 2.8125rem;
   flex-shrink: 0;
   border-radius: 1.40625rem;
-  background: var(--Orange, #fc7614);
-  border: none;
+  background: var(--orange);
+  border-color: var(--orange);
 
-  color: var(--Pure-White, #fff);
+  color: var(--white);
   font-family: Overpass;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.11669rem;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
 }
